@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #f4f4f4;
+        }
+        .header {
+            background: #ff4757;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+        }
+        .hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60vh;
+            background: linear-gradient(to right, #ff4757, #ff6b81);
+            color: white;
+            text-align: center;
+            flex-direction: column;
+        }
+        .hero h1 {
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        .btn {
+            padding: 10px 20px;
+            font-size: 18px;
+            background: white;
+            color: #ff4757;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s;
+            text-decoration: none;
+        }
+        .btn:hover {
+            background: #ff6b81;
+            color: white;
+        }
+        .features {
+            display: flex;
+            justify-content: space-around;
+            padding: 50px;
+            text-align: center;
+        }
+        .feature-box {
+            background: white;
+            padding: 20px;
+            width: 30%;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+        }
+        @media (max-width: 768px) {
+            .features {
+                flex-direction: column;
+                align-items: center;
+            }
+            .feature-box {
+                width: 80%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">My Awesome Landing Page</div>
+    <div class="hero">
+        <h1>Welcome to My Website</h1>
+        <p>Your journey to creativity begins here!</p>
+        <a href="about.html" class="btn">Get Started</a>
+    </div>
+    <div class="features">
+        <div class="feature-box">
+            <h2>HTML</h2>
+            <p>The backbone of a webpage that structures content using elements like headings, paragraphs, and links.</p>
+        </div>
+        <div class="feature-box">
+            <h2>CSS</h2>
+            <p>A styling language that enhances the appearance of a webpage by controlling layout, colors, and fonts.</p>
+        </div>
+        <div class="feature-box">
+            <h2>JavaScript</h2>
+            <p>A programming language that adds interactivity and dynamic behavior to webpages.</p>
+        </div>
+    </div>
+    <div class="footer">&copy; 2025 MyWebsite. All rights reserved.</div>
+</body>
+</html>
